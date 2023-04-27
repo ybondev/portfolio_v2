@@ -322,6 +322,8 @@ nav .overlay.show {
 .home-container .row .col-md-6:nth-child(2) img {
   width: 100%;
   max-width: 500px;
+  border-radius: 50px;
+  box-shadow: 5px 5px gray;
 }
 
 @media screen and (max-width: 768px) {
@@ -336,10 +338,6 @@ nav .overlay.show {
 }
 
 /* ABOUT CSS */
-.about-container {
-  /* height: 500px; */
-}
-
 .about-container .row .col-md-4 img {
   width: 100%;
   max-width: 500px;
