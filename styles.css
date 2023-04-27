@@ -337,7 +337,7 @@ nav .overlay.show {
 
 /* ABOUT CSS */
 .about-container {
-  height: 500px;
+  /* height: 500px; */
 }
 
 .about-container .row .col-md-4 img {
@@ -395,7 +395,7 @@ nav .overlay.show {
 
 /* CONTACT CSS */
 .contact-me-container {
-  height: 500px;
+  /* height: 500px; */
 }
 
 .contact-me-container span {
@@ -476,8 +476,16 @@ nav .overlay.show {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 768px) {
+#about {
+  padding: 100px 0;
+}
+
+#contacts {
+  padding: 0 0 100px;
+}
+
+/* @media screen and (max-width: 768px) {
   .contact-me-container {
     margin-top: 550px;
   }
-}
+} */
