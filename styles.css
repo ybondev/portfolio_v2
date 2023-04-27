@@ -26,7 +26,8 @@ body {
 /* NAVBAR */
 nav {
   background: var(--primary-color);
-  position: relative;
+  width: 100%;
+  position: fixed;
 }
 
 nav .custom-navbar {
@@ -248,7 +249,8 @@ nav .overlay.show {
 
 /* HOME CSS */
 .home-container {
-  height: calc(100dvh - 90px);
+  height: 100dvh;
+  padding-top: 100px;
 }
 
 .home-container .row .col-md-6:nth-child(1) {
