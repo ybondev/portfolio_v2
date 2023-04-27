@@ -475,3 +475,9 @@ nav .overlay.show {
   border-radius: 5px;
   text-transform: uppercase;
 }
+
+@media screen and (max-width: 768px) {
+  .contact-me-container {
+    margin-top: 550px;
+  }
+}
