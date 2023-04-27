@@ -27,11 +27,12 @@
           <li>
             <a href="#about">about</a>
           </li>
-          <li>
-            <a href="#">experience</a>
-          </li>
+
           <li>
             <a href="#">projects</a>
+          </li>
+          <li>
+            <a href="#">contact</a>
           </li>
         </ul>
         <input class="checkbox" type="checkbox" onclick="check_toggle()" />
@@ -47,11 +48,12 @@
           <li>
             <a href="#about">about</a>
           </li>
-          <li>
-            <a href="#">experience</a>
-          </li>
+
           <li>
             <a href="#">projects</a>
+          </li>
+          <li>
+            <a href="#">contact</a>
           </li>
           <div class="social">
             <p>
@@ -76,7 +78,7 @@
           <h1>Ramirez Angel Bird</h1>
           <div class="btn-container">
             <div class="cv-container">
-              <a href="#" download="./assets/Resume.pdf">download cv</a>
+              <a href="./assets/Resume.pdf" download>download cv</a>
             </div>
             <div class="contact-container">
               <a href="#">contact me</a>
@@ -237,6 +239,65 @@
               <p>Balete Central School</p>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="container projects-container" id="projects"></div>
+    <div class="container contact-me-container" id="contact">
+      <div class="row">
+        <div class="col-md-4">
+          <span>Contact Me</span>
+          <div class="details">
+            <div class="email mt-3">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:ybon.dev@gmail.com">ybon.dev@gmail.com</a>
+            </div>
+            <div class="contact mt-3">
+              <i class="fas fa-phone"></i>
+              <a href="tel:0930 985 8393">0930 985 8393</a>
+            </div>
+            <div class="cv-container mt-3">
+              <a href="./assets/Resume.pdf" download>download cv</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <form action="">
+            <div class="form-floating">
+              <input
+                type="text"
+                placeholder="Enter your name"
+                id="floatingInput"
+                class="form-control"
+                required
+              />
+              <label for="floatingInput">Enter your name</label>
+            </div>
+            <div class="form-floating mt-3">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                id="floatingEmail"
+                class="form-control"
+                required
+              />
+              <label for="floatingEmail">Enter your email</label>
+            </div>
+            <div class="form-floating mt-3">
+              <textarea
+                id="floatingTxt"
+                class="form-control"
+                placeholder="Enter your message"
+                cols="30"
+                rows="10"
+                required
+              ></textarea>
+              <label for="floatingTxt">Enter your name</label>
+            </div>
+            <div class="btn-submit mt-3">
+              <button>send message</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
