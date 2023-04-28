@@ -4,13 +4,13 @@ const body = document.querySelector("body");
 let get_mode = localStorage.getItem("mode");
 
 if (get_mode && get_mode === "dark") {
-  body.classList.add("dark-theme");
+  body.classList.add("light-theme");
 }
 
 toggle_dark_mode.addEventListener("click", () => {
-  document.body.classList.toggle("dark-theme");
+  document.body.classList.toggle("light-theme");
 
-  if (!body.classList.contains("dark-theme")) {
+  if (!body.classList.contains("light-theme")) {
     localStorage.setItem("mode", "light");
   } else {
     localStorage.setItem("mode", "dark");
