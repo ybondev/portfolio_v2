@@ -26,3 +26,9 @@ function check_toggle() {
     nav.classList.remove("show");
   }
 }
+
+const stikcy_nav = document.querySelector("header");
+
+window.addEventListener("scroll", function () {
+  stikcy_nav.classList.toggle("sticky", window.scrollY > 100);
+});
