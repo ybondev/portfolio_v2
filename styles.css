@@ -331,6 +331,7 @@ section {
 /* PROJECTS CSS */
 .projects .row .title {
   text-align: center;
+  margin-bottom: 5%;
 }
 
 .projects .row .title h2 {
@@ -346,14 +347,35 @@ section {
 }
 
 .projects .row .col-md-6 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  cursor: pointer;
 }
 
-.projects .row .col-md-6 img.img-fluid {
+.projects .row .col-md-6 .overlay {
+  background: #b7ac7f;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
-  max-width: 350px;
+  max-width: 636px;
+  height: 0;
+  overflow: hidden;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.projects .row .col-md-6 .overlay h2 {
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.projects .row .col-md-6:hover .overlay {
+  opacity: 1;
   height: 100%;
 }
 
@@ -361,6 +383,28 @@ section {
 .contact {
   background: var(--secondary-bg);
   padding-bottom: 5%;
+}
+
+.contact .row .col-md-4 .additional-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 5%;
+}
+
+.contact .row .col-md-4 .additional-info div {
+  margin: 0 0 20px;
+}
+
+.contact .row .col-md-4 .additional-info .icon {
+  color: #b7ac7f;
+  font-size: 24px;
+  margin: 0 10px 0 0;
+}
+
+.contact .row .col-md-4 .additional-info a {
+  text-decoration: none;
+  color: var(--txt-color);
 }
 
 .contact .title {
@@ -444,9 +488,8 @@ section {
     margin: 20px 0;
   }
 
-  .projects .row img.img-fluid {
-    width: 100%;
-    max-width: unset !important;
+  .projects .row .col-md-6:nth-child(4) {
+    margin: 4px 0;
   }
 
   .contact {
@@ -455,5 +498,23 @@ section {
 
   .contact .row .col-md-4 {
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1399px) {
+  .home .info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .home .info .cv {
+    max-width: 180px;
+    margin-right: 20px;
+  }
+
+  .home .info .social-media a:nth-child(2) {
+    margin: 0 5px;
   }
 }
