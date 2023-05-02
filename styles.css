@@ -370,7 +370,7 @@ section {
 }
 
 .projects .row .col-md-6 .overlay h2 {
-  font-size: 32px;
+  font-size: clamp(1rem, 0.6479rem + 1.5023vw, 2rem);
   text-transform: uppercase;
 }
 
@@ -430,6 +430,10 @@ section {
 
 .contact form .form-control:focus {
   box-shadow: none;
+}
+
+.contact form .alert {
+  display: none;
 }
 
 .contact form .form-control {

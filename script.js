@@ -32,3 +32,23 @@ const stikcy_nav = document.querySelector("header");
 window.addEventListener("scroll", function () {
   stikcy_nav.classList.toggle("sticky", window.scrollY > 100);
 });
+
+// CONTACT FORM
+const scriptURL =
+  "https://script.google.com/macros/s/AKfycbwgpAj_vsSjawZIVM4TgK7UBvrig0sjK5oVlvcc6rd2EPAKDpoOoWbGua6g3NaJodxj/exec";
+const form = document.forms["submit-to-google-sheet"];
+const msg = document.querySelector(".alert-success");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  fetch(scriptURL, { method: "POST", body: new FormData(form) })
+    .then((response) => {
+      msg.style.display = "block";
+      msg.innerHTML = "Message has successfully sent!";
+      setTimeout(() => {
+        msg.style.display = "none";
+      }, 3000);
+      form.reset();
+    })
+    .catch((error) => console.error("Error!", error.message));
+});
