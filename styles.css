@@ -372,6 +372,8 @@ section {
 .projects .row .col-md-6 .overlay h2 {
   font-size: clamp(1rem, 0.6479rem + 1.5023vw, 2rem);
   text-transform: uppercase;
+  font-weight: 700;
+  color: var(--txt-color);
 }
 
 .projects .row .col-md-6:hover .overlay {
