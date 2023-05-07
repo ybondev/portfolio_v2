@@ -1,3 +1,8 @@
+AOS.init({
+  delay: 500,
+  duration: 1000, // values from 0 to 3000, with step 50ms
+});
+
 const toggle_dark_mode = document.querySelector(".toggle-dark-mode");
 const body = document.querySelector("body");
 
