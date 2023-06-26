@@ -353,7 +353,7 @@ section {
 }
 
 .projects .row .col-md-6 .overlay {
-  background: #b7ac7f;
+  background: #272d33;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -374,7 +374,7 @@ section {
   font-size: clamp(1rem, 0.6479rem + 1.5023vw, 2rem);
   text-transform: uppercase;
   font-weight: 700;
-  color: var(--txt-color);
+  color: #f5f5f5;
 }
 
 .projects .row .col-md-6:hover .overlay {
